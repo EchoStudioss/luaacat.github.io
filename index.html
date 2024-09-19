@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - Servers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #1e1e1e;
+            --secondary-bg: #282828;
+            --accent-color: #4c7aaf;
+            --text-color: #333;
+            --text-light: #fff;
+            --text-muted: rgba(0, 0, 0, 0.6);
+            --gradient-bg: linear-gradient(135deg, #1e1e1e, #4c77af);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: var(--gradient-bg);
+            color: var(--text-light);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-bg);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .image-container a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .image-container a:hover {
+            color: #2e507d;
+        }
+
+        footer {
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.8rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Section spacing */
+        .section-container {
+            padding: 60px 0;
+        }
+
+        /* Terms Section Styling */
+        #terms {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Developer Portfolio</h1>
+</header>
+
+<section id="portfolio" class="section-container">
+    <h2>Servers I Have Worked On</h2>
+    <div class="image-container">
+        <a href="https://discord.gg/8XRumkkWe2" target="_blank">
+            <img src="https://imgur.com/N0oTtrE.jpg" alt="Server 1">
+            <p>Server 1</p>
+        </a>
+    </div>
+</section>
+
+<section id="github" class="section-container">
+    <h2>My Github</h2>
+    <div class="image-container">
+        <a href="https://github.com/LuaCatt" target="_blank">
+            <i class="fab fa-github" style="font-size: 36px;"></i>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 LuaCat. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://ko-fi.com/luacat" target="_blank"><i class="fas fa-money-bill"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
